@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+    head
+        title Motivational Quotes
+        link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+        script(type='text/javascript').
+            function onSorting() {
+            var sortby = document.getElementById('sorting');
+            //alert(sortby.value)
+            window.location = "/date?sort=" + sortby.value;
+            }
+           
+    body 
+        h1 Motivational Quotes
+    
+        table
+            tbody
+                tr
+                    th
+                        h3 Date
+                        select#sorting(onchange='onSorting()')
+                            option() Sort 
+                            option(value='ASC') Asc
+                            option(value='DESC') Desc
+                    th 
+                        h3 Author
+                    th 
+                        h3 Quote
+                    th
+                        h3 Motivacional
+                    th  
+                        h3 Delete
+            each quote in results
+                tr
+                    td #{quote.date}
+                    td #{quote.author} 
+                    td "#{quote.quote}"
+                    td
+                        form(action=`/motivation/${quote.id}` method="post")
+                            input(
+                            type="submit" 
+                            value=`${quote.isMotivated ?
+                                "Motivates Me" : "Not Motivates Me"}`
+                            )
+                    td
+                        form(action=`/delete` method="post")
+                            input(
+                            value=quote.id 
+                            type="hidden" 
+                            name="id"
+                            )
+                            input(
+                            type="submit"
+                            value="Delete"
+                            )
+        
+        .title
+            form(action=`/delete/notmotivateme` method="post")
+                input(
+                type="submit"
+                value="Delete All Not Motivates Me"
+                )
+
+                                    
+                        

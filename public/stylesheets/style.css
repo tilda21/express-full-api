@@ -1,0 +1,98 @@
+h1 {
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+   font-size: 60px;
+   text-align: center;
+   color: brown;
+}
+.title {
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+p { 
+    margin: auto;
+    padding: 5px;
+    text-align: left;
+}
+
+.center {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+button {
+    margin: 10px 15px;
+    background-color: rgb(230, 50, 50); 
+    border: none;
+    color: white;
+    padding: 25px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+button:hover {
+    background-color: whitesmoke; 
+    color: rgb(230, 50, 50);
+}
+
+form input {
+    margin: 5px;
+    background-color: rgb(230, 50, 50); 
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+form .text {
+    margin: auto;
+    background-color: rgb(172, 99, 99); 
+    border: brown;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+form .submit {
+    margin: 5px;
+    background-color: rgb(230, 50, 50); 
+    border: whitesmoke;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+form .text2 {
+    margin: auto;
+    background-color: rgb(172, 99, 99); 
+    border: brown;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #ee6363;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f38a8a;
+  }

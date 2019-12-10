@@ -1,0 +1,58 @@
+doctype html
+html(lang="en")
+    head
+        title Motivational Quotes
+        link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+
+     
+    body
+        .title
+            h1 Motivational Quotes
+            h2 Feel motivated for the rest of your day with this amazing quotes
+
+        .title  
+            - var url = 'quote';
+            - var id = Math.floor(Math.random() * (48 - 25 + 1) + 25);
+            a(href=`/${url}`) 
+                button Quotes
+            a(href=`/${url}/${id}`) 
+                button Random Quote
+        
+        .center
+            form(action='/get', method='get')
+                .text 
+                    |  Filter quotes from:
+                    input(type='date', name='date', value='')
+                    .submit
+                        input(type='submit', value='Submit')  
+            
+            form(action='/get', method='get')
+                .text 
+                    |  Filter quotes by author:  
+                    input(type='text', name='name', value='')
+                    .submit
+                        input(type='submit', value='Submit')
+
+            form(action='/get', method='get')
+                .text 
+                    |  Filter quotes that include: 
+                    input(type='text', name='word', value='')
+                    .submit
+                        input(type='submit', value='Submit')
+
+        .title
+            h3 Post a new quote
+        .title
+            form(action='/', method='post')
+                .text2 
+                    |  Insert the date:
+                    input(type='date', name='dateDate', value='')
+                .text2
+                    |  Insert the author name: 
+                    input(type='text', name='authorName', value='')
+                .text2
+                    |  Insert the quote: 
+                    input(type='text', name='quoteText', value='')
+                .text2
+                    .submit   
+                        input(type='submit', value='Submit')
