@@ -22,6 +22,7 @@ const showQuotes = (req, res, next) => {
 
 const showQuoteID =(req, res, next) => {
     let id = req.params.id;
+    //console.log(req.params);
     getIDQuote(id, (err, results) => {
     
         if (err) {
@@ -30,7 +31,7 @@ const showQuoteID =(req, res, next) => {
         }
         else {
             console.log('We got the quote succefully')
-            //console.log(results);
+            console.log(results);
             // If everything went well
             res.status(200).render('quotes', { results });
         }

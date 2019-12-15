@@ -18,7 +18,8 @@ const postAQuote = (req, res, next) => {
             //console.log(results);
             // If everything went well
             //res.status(200).json(results);
-            res.status(200).json({message: 'The quote was posted succefully'});
+            //res.status(200).json({message: 'The quote was posted succefully'});
+            res.redirect('/');
         }
         
     })

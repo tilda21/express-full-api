@@ -24,7 +24,7 @@ let getIDQuote =  (id, callback) => {
     const idQuote = id;
     //console.log(idQuote);
     connection.query(
-        'SELECT DATE_FORMAT(dateOfPublication, "%m/%y") as date, author, quote  FROM motivacion WHERE id = ?',
+        'SELECT id, DATE_FORMAT(dateOfPublication, "%m/%y") as date, author, quote, isMotivated FROM motivacion WHERE id = ?',
         idQuote,
         (err, results, fields) => {
             callback(err, results, fields);

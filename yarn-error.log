@@ -1,5 +1,5 @@
 Arguments: 
-  /home/tilda21/.nvm/versions/node/v10.17.0/bin/node /usr/share/yarn/bin/yarn.js install
+  /home/tilda21/.nvm/versions/node/v10.17.0/bin/node /usr/share/yarn/bin/yarn.js add gitignore
 
 PATH: 
   /home/tilda21/.nvm/versions/node/v10.17.0/bin:/home/tilda21/bin:/home/tilda21/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
