@@ -2,7 +2,7 @@ h1 {
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
    font-size: 60px;
    text-align: center;
-   color: brown;
+   color: blue;
 }
 .title {
     margin: auto;
@@ -23,7 +23,7 @@ p {
 }
 button {
     margin: 10px 15px;
-    background-color: rgb(230, 50, 50); 
+    background-color: rgb(42, 50, 165); 
     border: none;
     color: white;
     padding: 25px 50px;
@@ -34,12 +34,12 @@ button {
 }
 button:hover {
     background-color: whitesmoke; 
-    color: rgb(230, 50, 50);
+    color: rgb(11, 21, 158);
 }
 
 form input {
     margin: 5px;
-    background-color: rgb(230, 50, 50); 
+    background-color: rgb(11, 21, 158); 
     border: none;
     color: white;
     padding: 20px 32px;
@@ -61,7 +61,7 @@ form .text {
 }
 form .submit {
     margin: 5px;
-    background-color: rgb(230, 50, 50); 
+    background-color: rgb(42, 50, 165); 
     border: whitesmoke;
     color: white;
     padding: 5px 10px;
@@ -69,6 +69,9 @@ form .submit {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+form .submit:hover {
+    background-color: rgb(11, 21, 158);
 }
 form .text2 {
     margin: auto;
